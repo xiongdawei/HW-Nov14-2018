@@ -36,26 +36,7 @@ class Stack():
             listt.append(self.items[-1])
             self.items.remove(self.items[-1])
         return listt
-    
-    def parChecker(self,string):
-        a = Stack()
-        balanced = True
-        index = 0
-        while index< len(string) and balanced:
-            symbol = string[index]
-            if symbol == "(":
-                a.push(symbol)
-            else:
-                if a.isEmpty():
-                    balanced = False
-                else:
-                    a.pop()
-            index+=1
-        if balanced and a.isEmpty():
-            return True
-        else:
-            return False
-                
+
                 
         
                      
