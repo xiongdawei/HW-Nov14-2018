@@ -11,7 +11,7 @@ class Queue():
         self.queue = []
     
     def push(self,item):
-        self.queue.append(item)
+        self.queue.insert(0,item)
         
     def front(self):
         return self.queue[0]
